@@ -4,7 +4,7 @@
     right: 0;
     top: 0;
     z-index: 99;
-    padding: 10px 20px 0;
+    padding: 10px 20px ;
     background: #ffffff;
     box-shadow: 1px 1px 4px #0000004b;
     display: flex;
@@ -17,20 +17,20 @@
     display: block;
     font-size: 1.4rem;
     font-weight: 700;
-    padding: 14px 20px;
+    padding: 14px 0;
 }
 
 .navbar__list {
     display: flex;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-top: 5px;
 }
 
 .navbar__item {
     background: none;
     font-size: 1.4rem;
     padding: 0 5vw;
-    text-align: center;
     width: 15%;
 }
 

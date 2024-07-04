@@ -1,0 +1,9 @@
+.login {
+    padding: 110px 20px;
+}
+
+@media (width < 560px) {
+    .login {
+        padding: 150px 20px;
+    }
+}

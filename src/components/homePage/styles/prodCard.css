@@ -1,12 +1,13 @@
 .prodcard {
-    padding: 20px 0;
+    position: relative;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .prodcard__container {
     width: 300px;
-    height: 100%;
+    height: 450px;
     background-color: #e4d5ca6d;
     box-shadow: 1px 1px 4px #0000004b;
     border-radius: 10px;
@@ -54,6 +55,7 @@
 
 .prodcard__div {
     width: 100%;
+    border: 0.5px solid #d2c0b1;
 }
 
 .prodcard__list {
@@ -79,13 +81,20 @@
 }
 
 .prodcard__buttons {
-    position: relative;
+    position: absolute;
     top: 80%;
-    right: 25%;
+    right: 10%;
 }
 
 .prodcard__buttons button {
+    box-shadow: 1px 1px 4px #0000002e;
     padding: 10px 20px;
-    border: 1px solid;
     border-radius: 10px;
+}
+
+
+@media (width < 560px) {
+    .prodcard  {
+        padding: 0;
+    }
 }

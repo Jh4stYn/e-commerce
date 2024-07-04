@@ -19,7 +19,7 @@ const prodSimilar = ({product}) => {
     return (
         <div className='prodsimilar'>
             <h2 className='prodsimilar__title'>Discover similar items</h2>
-            <div className='homepage__container'>
+            <div className='prodsimilar__container'>
                 {
                     items?.filter(cbFilter).map(prod => (
                         <ProdCard

@@ -1,7 +1,16 @@
 .prodinfo {
+    overflow: hidden;
+    width: 100%;
+    padding: 140px 10px 0 ;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
+}
+
+@media (width < 560px) {
+    .prodinfo {
+        padding-top: 160px;
+    }
 }

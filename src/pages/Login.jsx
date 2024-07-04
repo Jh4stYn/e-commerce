@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 import useAuth from '../hooks/useAuth'
+import './styles/login.css'
 
 const Login = () => {
     const [token, setToken] = useState()
@@ -27,7 +28,7 @@ const Login = () => {
     }
     
     return (
-        <>
+        <div className='login'>
         {
             token ? 
                 <button onClick={handleLogout}>Logout</button>
@@ -47,7 +48,7 @@ const Login = () => {
                     <p>If you are not register yet, <Link to={'/register'}>register here</Link> </p>
                 </div>
         }
-        </>
+        </div>
         
     )
 }

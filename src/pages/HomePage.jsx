@@ -53,7 +53,7 @@ const HomePage = () => {
                     <input ref={textInput} onChange={handleChange} type='text'/>
                     <button>🔍</button>
             </div>
-            <button className={menu && 'active'} onClick={handleMenu}>Menu</button>
+            <button className={menu && 'active'} onClick={handleMenu}><box-icon name='menu'></box-icon></button>
             <div className='homepage__container'>
                 {
                     products?.filter(cbFilter).map(prod => (

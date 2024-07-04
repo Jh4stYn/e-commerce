@@ -1,0 +1,44 @@
+.purchases {
+    margin: 120px 20px 0;
+}
+
+.purchases__title {
+    padding : 20px 10px 60px;
+}
+
+.purchases__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.purchases__item {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.purchases__item__img {
+    height: 120px;
+    width: 200px;
+}
+.purchases__item__img img {
+    width: 100%;
+}
+
+.purchases__item__name {
+
+}
+
+.purchases__item__date {
+
+}
+
+.purchases__item__quantity {
+
+}
+
+.purchases__item__price {
+
+}
