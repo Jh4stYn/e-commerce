@@ -1,0 +1,91 @@
+.prodcard {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.prodcard__container {
+    width: 300px;
+    height: 100%;
+    background-color: #e4d5ca6d;
+    box-shadow: 1px 1px 4px #0000004b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prodcard__img {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodcard__img img {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.prodcard__img img:first-child {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.prodcard__img:hover img:first-child {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.prodcard__img img:last-child {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+
+}
+
+.prodcard__img:hover img:last-child {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.prodcard__div {
+    width: 100%;
+}
+
+.prodcard__list {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prodcard__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.prodcard__item span:first-child {
+    color: #929292 ;
+}
+
+.prodcard__item span:last-child {
+    padding-left: 20px ;
+}
+
+.prodcard__buttons {
+    position: relative;
+    top: 80%;
+    right: 25%;
+}
+
+.prodcard__buttons button {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}

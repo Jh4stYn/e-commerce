@@ -1,0 +1,44 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    padding: 10px 20px 0;
+    background: #ffffff;
+    box-shadow: 1px 1px 4px #0000004b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar__title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 14px 20px;
+}
+
+.navbar__list {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar__item {
+    background: none;
+    font-size: 1.4rem;
+    padding: 0 5vw;
+    text-align: center;
+    width: 15%;
+}
+
+
+@media (width < 560px) {
+    .navbar__title,
+    .navbar__list {
+        margin: 0 auto;
+    }
+    
+}

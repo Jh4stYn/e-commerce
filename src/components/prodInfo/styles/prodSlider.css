@@ -1,0 +1,17 @@
+.splide {
+    height: 350px;
+    min-width: 280px;
+    max-width: 450px;
+}
+
+.splide__slide {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splide__arrow {
+    transform: none;
+}
+
