@@ -31,10 +31,13 @@ const Login = () => {
         <div className='login'>
         {
             token ? 
-                <button onClick={handleLogout}>Logout</button>
+                <div className='login__in'>
+                    <p>You are logged in</p>
+                    <button onClick={handleLogout}>Logout</button>
+                </div>
                 :
-                <div>
-                    <form onSubmit={handleSubmit(submit)}>
+                <div className='login__content'>
+                    <form className='login__form' onSubmit={handleSubmit(submit)}>
                         <div>
                             <label htmlFor="email">Email</label>
                             <input {...register('email')} type="text" id="email" />

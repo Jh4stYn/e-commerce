@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import useAuth from '../hooks/useAuth'
+import './styles/register.css'
 
 const Register = () => {
 
@@ -19,8 +20,8 @@ const Register = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit(submit)}>
+        <div className='register'>
+            <form className='register__form' onSubmit={handleSubmit(submit)}>
                 <div>
                     <label htmlFor="firstName">First Name</label>
                     <input {...register('firstName')} type="text" id="firstName" />

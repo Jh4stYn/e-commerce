@@ -25,7 +25,7 @@ const Purchases = () => {
                             <span className='purchases__item__name'>{item.product.title}</span>
                             <div className='purchases__item__date'>{item.createdAt.slice(0, 10)}</div>
                             <div className='purchases__item__quantity'>{item.quantity}</div>
-                            <div className='purchases__item__price'>{item.product.price}</div>
+                            <div className='purchases__item__price'>$ {item.product.price}</div>
                         </li>
                     ))
                 }
